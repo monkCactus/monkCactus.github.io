@@ -9,6 +9,4 @@ Walking the path starting with:
 
 I'll be documenting my journey here, and perhaps, on YouTube. 
 
-### Contact
 
-You can reach me on [Twitter](https://twitter.com/MonkCactus) 
