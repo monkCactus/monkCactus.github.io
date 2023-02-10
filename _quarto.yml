@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Rare Nostriches"
+  navbar:
+    right:
+      - about.qmd
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
+
+

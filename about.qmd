@@ -1,0 +1,15 @@
+---
+title: "About"
+image: images/nostr_west.jpeg
+about:
+  template: jolla
+  links:
+    - icon: lightning-charge-fill
+      text: Tip with lightning
+      href: https://getalby.com/p/monk_cactus
+    - icon: envelope
+      text: Nostr
+      href: https://snort.social/p/npub1pkj5lugwrychstydkt9h2xdzst9ejreemleh3hz69nr85cmegqrs232y4t
+
+---
+

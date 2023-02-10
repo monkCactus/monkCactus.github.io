@@ -1,0 +1,33 @@
+---
+title: ""
+---
+
+This is my Rare Nostrich collection.  Since I did the Proof of Work to gather these together, these are actually way more better than Ethereum NFTs or inscriptions. 
+
+Plus, you can have them for free, my treat! 
+
+
+::: {layout-ncol=2}
+![](images/nostrich_1.jpeg){width=600}
+
+![](images/nostrich_2.jpeg)
+
+![](images/nostrich_3.jpeg)
+
+![](images/nostrich_4.jpeg)
+
+![](images/nostrich_5.jpeg)
+
+![](images/nostrich_6.jpeg)
+
+![](images/nostrich_7.jpeg)
+
+![](images/nostrich_8.jpeg)
+
+![](images/nostrich_9.jpeg)
+
+![](images/nostrich_10.jpeg){width=600}
+
+![](images/nostrich_11.jpeg){width=300}
+
+:::
