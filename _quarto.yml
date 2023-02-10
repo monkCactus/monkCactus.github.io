@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Rare Nostriches"
+  favicon: images/nostr_land.jpeg
   navbar:
     right:
       - about.qmd
