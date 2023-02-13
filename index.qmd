@@ -2,18 +2,6 @@
 title: ""
 ---
 
-This is my Rare Nostrich collection, the product of a new NFT protocol that uses Proof of Collection for it's consensus mechanism. 
-
-As you can see, these images are all gathered here, in a collection.  It can be inferred then, that I expended work to gather these images, and thus they are provably "collected". 
-
-The protocol is infinitely flexible.  These NFTs can be sent using almost any protocol (TCP/IP, SMTP, SMS, Nostr, etc), using any client you wish.  Moreover, you can send them to whomever you want, whenever you want.  It's an entirely censorship resistant system, and no one can ever take them away from you.  
-
-In fact, you can also turn these NFTs into a physical bearer instrument by putting them on a USB drive! 
-
-All in all, I think these are way more doper than existing NFTs.  
-
-Plus, you can have them for free, my treat! 
-
 
 ::: {layout-ncol=2}
 ![](images/nostrich_1.jpeg){width=600}
