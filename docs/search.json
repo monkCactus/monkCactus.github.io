@@ -1,9 +1,30 @@
 [
   {
+    "objectID": "fudbusters/fudbusters1_security_budget.html",
+    "href": "fudbusters/fudbusters1_security_budget.html",
+    "title": "Fudbusters 1: Security Budget",
+    "section": "",
+    "text": "The Context\nSo what does it even mean for Bitcoin to have a “security budget”? And why are people concerned about its future?\nI will assume that you have a basic understanding of the bitcoin network, its workings (both technical and economic), and its history. But to be sure, let’s walk through the role of Proof of Work mining in acheiving consensus and “Bitcoin security”.\nTo borrow from Mastering Bitcoin, consensus in Bitcoin emerges from:\n\nIndependent verifications of transactions and blocks by all full nodes\nIndependent selection, by every node, of the chain with the most cumulative computation demonstrated through Proof of Work\n\nAside from distribution of bitcoin via the block subsidy, allowing consensus to emerge is the reason Proof of Work is a part of the protocol. Proof of Work does not really “secure”, your bitcoin. The network of nodes do this by enforcing protocol rules, and you do this by protecting your seed phrase. Thus, a takeover of Bitcoin hash rate only allows for consensus attacks. How bad can a consensus attack really be?\n\n\nConsensus Attacks\nConsensus is agreement on the order of all transactions, and by extension, who holds which UTXOs. Needless to say, this is important for the functioning of the Bitcoin network, so a sustained attack on consensus would be quite a threat.\nThe first step for an attacker is to acquire a large proportion of the hash rate. The larger the proportion, the higher the probablity of a successful attack. Let’s say an attacker compromises 60% of the hash rate. What happens next?\nThe attacker would be able to:\n\nInvalidate previously confirmed blocks (to something like 6 blocks back)\nCensor (temporarily) transactions by refusing to include them in a block\n\nProof of Work mining\nBitcoin hashrate\nConsensus attacks\nA consensus attack cannot steal bitcoin, spend bitcoin without signatures, redirect bitcoin, or otherwise change past transactions or ownership records. Consensus attacks can only affect the most recent blocks and cause denial-of-service disruptions on the creation of future blocks.\nOne attack scenario against the consensus mechanism is called the “51% attack.” In this scenario a group of miners, controlling a majority (51%) of the total network’s hashing power, collude to attack bitcoin. With the ability to mine the majority of the blocks, the attacking miners can cause deliberate “forks” in the blockchain and double-spend transactions or execute denial-of-service attacks against specific transactions or addresses. A fork/double-spend attack is where the attacker causes previously confirmed blocks to be invalidated by forking below them and re-converging on an alternate chain. With sufficient power, an attacker can invalidate six or more blocks in a row, causing transactions that were considered immutable (six confirmations) to be invalidated. Note that a double-spend can only be done on the attacker’s own transactions, for which the attacker can produce a valid signature. Double-spending one’s own transactions is profitable if by invalidating a transaction the attacker can get an irreversible exchange payment or product without paying for it."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rare Nostriches",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "things.html",
+    "href": "things.html",
+    "title": "Notes",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "la vie en violet",
     "section": "",
-    "text": "If you have rare nostriches not currently part of the collection, feel free to message me on nostr and I’ll add them.\nI did not make any of these magnificent pieces, nor do I know who did. Enjoy!"
+    "text": "If you have rare nostriches not currently part of the collection, feel free to message me on nostr and I’ll add them.\nI did not make any of the art, nor do I know who did. Enjoy!"
   }
 ]

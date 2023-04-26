@@ -1,6 +1,6 @@
 ---
 title: "la vie en violet"
-image: images/nostr_west.jpeg
+image: nostriches/images/nostr_west.jpeg
 about:
   template: jolla
   links:
@@ -13,8 +13,8 @@ about:
 
 ---
 
-Art from the nostr underground. 
+Art from the nostr underground and other things.
 
 If you have rare nostriches not currently part of the collection, feel free to message me on nostr and I'll add them. 
 
-I did not make any of these magnificent pieces, nor do I know who did. Enjoy!
+I did not make any of the art, nor do I know who did. Enjoy!

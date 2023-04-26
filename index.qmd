@@ -1,8 +1,22 @@
 ---
 title: ""
+listing:
+    contents: nostriches
+    fields: [image]
+    type: grid
+    image-height: 300px
+    page-size: 9
 ---
+<!-- 
 
+{{< include nostriches/nostrich_1.qmd >}}
 
+{{< pagebreak >}}
+
+{{< include nostriches/nostrich_2.qmd >}}
+ -->
+
+<!-- 
 ::: {layout-ncol=2}
 ![](images/nostrich_1.jpeg){width=600}
 
@@ -279,4 +293,4 @@ title: ""
 ![](images/nostrich_98.jpeg)
 
 
-:::
+::: -->

@@ -7,6 +7,8 @@ website:
   favicon: images/nostr_land.jpeg
   navbar:
     right:
+      #- text: "Notes"
+      #  href: things.qmd
       - text: "About"
         href: about.qmd
 

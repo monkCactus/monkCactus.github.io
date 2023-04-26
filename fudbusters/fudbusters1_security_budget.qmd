@@ -1,0 +1,60 @@
+---
+title: "Fudbusters 1: Security Budget"
+image: "../nostriches/images/nostrich_72.jpeg"
+---
+
+### The FUD
+
+Let's lay down some definitions.  By security budget FUD I am referring to claims that assert transaction fees paid to Bitcoin miners will not be adequate to prevent a hostile takeover of the Bitcoin hashrate. 
+
+The claims come in a few flavors:
+
+* The deflationary nature of the halving block subsidy is an inherent design flaw in Bitcoin, because transaction fees alone will never incentivize enough honest hash rate. 
+* Without increased demand for block space, transaction fees will not be sufficient to incentivize enough honest hash rate. 
+
+After asserting such a claim, the fudster will then make statements about what should be done to solve the perceived problem. Examples of proposed solutions are:
+
+* Don't use Bitcoin because it has this fatal flaw. Instead, use the individual's preferred shitcoin or fiat system. 
+* Add tail emissions (a small perpetual block subsidy) to Bitcoin, to incentivize enough honest hash rate. 
+* Add the individual's preferred BIP to the protocol, to increase demand for block space, and thereby ensure that fees incentivize enough hash rate. 
+
+It is true that there will be some minimum fee market revenue required to incentivize mining. That is why I've used the phrase "enough honest hash rate". Exactly what that minimum will need to be is a complicated question, but this nuance is not generally acknowledged by fudsters. Instead, they tend to operate on the assumption that anything less than the current hash rate (or hash rate spend, measured in either dollars or electricity) will be inadequate. 
+
+### The Context 
+
+So what does it even mean for Bitcoin to have a "security budget"? And why are people concerned about its future? 
+
+I will assume that you have a basic understanding of the bitcoin network, its workings (both technical and economic), and its history. But to be sure, let's walk through the role of Proof of Work mining in acheiving consensus and "Bitcoin security". 
+
+To borrow from [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch10.asciidoc), consensus in Bitcoin emerges from: 
+
+* Independent verifications of transactions and blocks by all full nodes
+* Independent selection, by every node, of the chain with the most cumulative computation demonstrated through Proof of Work
+
+Aside from distribution of bitcoin via the block subsidy, allowing consensus to emerge is **the** reason Proof of Work is a part of the protocol. Proof of Work does not really "secure", your bitcoin. The network of nodes do this by enforcing protocol rules, and you do this by protecting your seed phrase. Thus, a takeover of Bitcoin hash rate only allows for consensus attacks. How bad can a consensus attack really be? 
+
+### Consensus Attacks
+
+Consensus is agreement on the order of all transactions, and by extension, who holds which UTXOs. Needless to say, this is important for the functioning of the Bitcoin network, so a sustained attack on consensus would be quite a threat. 
+
+The first step for an attacker is to acquire a large proportion of the hash rate. The larger the proportion, the higher the probablity of a successful attack. Let's say an attacker compromises 60% of the hash rate. What happens next?
+
+The attacker would be able to:
+
+* Invalidate previously confirmed blocks (to something like 6 blocks back)
+* Censor (temporarily) transactions by refusing to include them in a block
+
+
+Proof of Work mining 
+
+Bitcoin hashrate 
+
+Consensus attacks
+
+
+
+
+
+A consensus attack cannot steal bitcoin, spend bitcoin without signatures, redirect bitcoin, or otherwise change past transactions or ownership records. Consensus attacks can only affect the most recent blocks and cause denial-of-service disruptions on the creation of future blocks.
+
+One attack scenario against the consensus mechanism is called the "51% attack." In this scenario a group of miners, controlling a majority (51%) of the total network’s hashing power, collude to attack bitcoin. With the ability to mine the majority of the blocks, the attacking miners can cause deliberate "forks" in the blockchain and double-spend transactions or execute denial-of-service attacks against specific transactions or addresses. A fork/double-spend attack is where the attacker causes previously confirmed blocks to be invalidated by forking below them and re-converging on an alternate chain. With sufficient power, an attacker can invalidate six or more blocks in a row, causing transactions that were considered immutable (six confirmations) to be invalidated. Note that a double-spend can only be done on the attacker’s own transactions, for which the attacker can produce a valid signature. Double-spending one’s own transactions is profitable if by invalidating a transaction the attacker can get an irreversible exchange payment or product without paying for it.

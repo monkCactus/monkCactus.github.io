@@ -1,0 +1,13 @@
+---
+title: "Notes"
+listing:
+    contents: fudbusters
+    fields: [title,image]
+    type: grid
+    image-height: 300px
+    page-size: 21
+---
+
+
+
+

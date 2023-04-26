@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Rare Nostriches - Fudbusters 1: Security Budget</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/nostr_land.jpeg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Rare Nostriches</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-fud" id="toc-the-fud" class="nav-link active" data-scroll-target="#the-fud">The FUD</a></li>
+  <li><a href="#the-context" id="toc-the-context" class="nav-link" data-scroll-target="#the-context">The Context</a></li>
+  <li><a href="#consensus-attacks" id="toc-consensus-attacks" class="nav-link" data-scroll-target="#consensus-attacks">Consensus Attacks</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fudbusters 1: Security Budget</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="the-fud" class="level3">
+<h3 class="anchored" data-anchor-id="the-fud">The FUD</h3>
+<p>Let’s lay down some definitions. By security budget FUD I am referring to claims that assert transaction fees paid to Bitcoin miners will not be adequate to prevent a hostile takeover of the Bitcoin hashrate.</p>
+<p>The claims come in a few flavors:</p>
+<ul>
+<li>The deflationary nature of the halving block subsidy is an inherent design flaw in Bitcoin, because transaction fees alone will never incentivize enough honest hash rate.</li>
+<li>Without increased demand for block space, transaction fees will not be sufficient to incentivize enough honest hash rate.</li>
+</ul>
+<p>After asserting such a claim, the fudster will then make statements about what should be done to solve the perceived problem. Examples of proposed solutions are:</p>
+<ul>
+<li>Don’t use Bitcoin because it has this fatal flaw. Instead, use the individual’s preferred shitcoin or fiat system.</li>
+<li>Add tail emissions (a small perpetual block subsidy) to Bitcoin, to incentivize enough honest hash rate.</li>
+<li>Add the individual’s preferred BIP to the protocol, to increase demand for block space, and thereby ensure that fees incentivize enough hash rate.</li>
+</ul>
+<p>It is true that there will be some minimum fee market revenue required to incentivize mining. That is why I’ve used the phrase “enough honest hash rate”. Exactly what that minimum will need to be is a complicated question, but this nuance is not generally acknowledged by fudsters. Instead, they tend to operate on the assumption that anything less than the current hash rate (or hash rate spend, measured in either dollars or electricity) will be inadequate.</p>
+</section>
+<section id="the-context" class="level3">
+<h3 class="anchored" data-anchor-id="the-context">The Context</h3>
+<p>So what does it even mean for Bitcoin to have a “security budget”? And why are people concerned about its future?</p>
+<p>I will assume that you have a basic understanding of the bitcoin network, its workings (both technical and economic), and its history. But to be sure, let’s walk through the role of Proof of Work mining in acheiving consensus and “Bitcoin security”.</p>
+<p>To borrow from <a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch10.asciidoc">Mastering Bitcoin</a>, consensus in Bitcoin emerges from:</p>
+<ul>
+<li>Independent verifications of transactions and blocks by all full nodes</li>
+<li>Independent selection, by every node, of the chain with the most cumulative computation demonstrated through Proof of Work</li>
+</ul>
+<p>Aside from distribution of bitcoin via the block subsidy, allowing consensus to emerge is <strong>the</strong> reason Proof of Work is a part of the protocol. Proof of Work does not really “secure”, your bitcoin. The network of nodes do this by enforcing protocol rules, and you do this by protecting your seed phrase. Thus, a takeover of Bitcoin hash rate only allows for consensus attacks. How bad can a consensus attack really be?</p>
+</section>
+<section id="consensus-attacks" class="level3">
+<h3 class="anchored" data-anchor-id="consensus-attacks">Consensus Attacks</h3>
+<p>Consensus is agreement on the order of all transactions, and by extension, who holds which UTXOs. Needless to say, this is important for the functioning of the Bitcoin network, so a sustained attack on consensus would be quite a threat.</p>
+<p>The first step for an attacker is to acquire a large proportion of the hash rate. The larger the proportion, the higher the probablity of a successful attack. Let’s say an attacker compromises 60% of the hash rate. What happens next?</p>
+<p>The attacker would be able to:</p>
+<ul>
+<li>Invalidate previously confirmed blocks (to something like 6 blocks back)</li>
+<li>Censor (temporarily) transactions by refusing to include them in a block</li>
+</ul>
+<p>Proof of Work mining</p>
+<p>Bitcoin hashrate</p>
+<p>Consensus attacks</p>
+<p>A consensus attack cannot steal bitcoin, spend bitcoin without signatures, redirect bitcoin, or otherwise change past transactions or ownership records. Consensus attacks can only affect the most recent blocks and cause denial-of-service disruptions on the creation of future blocks.</p>
+<p>One attack scenario against the consensus mechanism is called the “51% attack.” In this scenario a group of miners, controlling a majority (51%) of the total network’s hashing power, collude to attack bitcoin. With the ability to mine the majority of the blocks, the attacking miners can cause deliberate “forks” in the blockchain and double-spend transactions or execute denial-of-service attacks against specific transactions or addresses. A fork/double-spend attack is where the attacker causes previously confirmed blocks to be invalidated by forking below them and re-converging on an alternate chain. With sufficient power, an attacker can invalidate six or more blocks in a row, causing transactions that were considered immutable (six confirmations) to be invalidated. Note that a double-spend can only be done on the attacker’s own transactions, for which the attacker can produce a valid signature. Double-spending one’s own transactions is profitable if by invalidating a transaction the attacker can get an irreversible exchange payment or product without paying for it.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

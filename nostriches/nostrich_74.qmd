@@ -1,0 +1,5 @@
+---
+title: ""
+image: images/nostrich_74.jpeg
+---
+![](images/nostrich_74.jpeg)
